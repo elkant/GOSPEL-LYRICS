@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Blogger API Example</title>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- https://www.googleapis.com/blogger/v3/blogs/9196420013071051754 -->
+	<script>
+	//google.load("gdata", "1.1");
+	//google.setOnLoadCallback(getMyBlogFeed);
+	$.ajax({
+	url:'https://www.googleapis.com/blogger/v3/blogs/8510445962916856741/posts?key=AIzaSyBXoswW6RY8PDyqjDZrZC1v9nuLfQCkNyE',
+	type:'GET',
+	dataType:'json',
+	success:function(data){
+	//alert(data.items[0].title);
+	$("#head").html(data.items[8].title);
+	$("#dat").html(data.items[8].content);
+	}
+	});
+	</script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+      
+    </script>
+   <h1 id="head"></h1>
+   <div id="dat"></div>
+  </body>
+</html>
+

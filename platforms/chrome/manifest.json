@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "GospelLyrics",
+    "description": "The greatest Lyrics App in Africa",
+    "version": "0.1.0",
+    "app": {
+        "background": {
+            "scripts": [
+                "background.js"
+            ]
+        }
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "clipboardWrite",
+        "clipboardRead",
+        "unlimitedStorage"
+    ],
+    "short_name": "GL",
+    "offline_enabled": true,
+    "optional_permissions": [],
+    "externally_connectable": {
+        "ids": [],
+        "matches": [],
+        "accepts_tls_channel_id": false
+    }
+}
